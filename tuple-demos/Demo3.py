@@ -1,0 +1,6 @@
+a=(1,5,2,4)
+print(id(a))
+print(a)
+sorted(a)
+print(id(a))
+print(a)
