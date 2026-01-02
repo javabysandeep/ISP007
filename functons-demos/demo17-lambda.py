@@ -1,16 +1,18 @@
-def add(a,b):
-    return a+b
+def add(a, b):
+    return a + b
 
-result = add(1,2)
+
+result = add(1, 2)
 
 
 def square_it(number):
-    return number*number
+    return number * number
+
 
 result_square = square_it(5)
 print(result_square)
+
 print("using lambda function")
 
-find_square =lambda number:number*number # function definition
+find_square = lambda number: number * number
 print(find_square(5))
-

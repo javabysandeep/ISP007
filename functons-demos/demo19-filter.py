@@ -8,4 +8,5 @@ is_even2 = lambda number: number % 2 == 0
 print(list(filter(is_even1, numbers)))
 print(list(filter(is_even2, numbers)))
 
-print('odd numbers',list(filter(lambda number: number % 2 == 1, numbers)))
+print('odd numbers',
+      list(filter(lambda number: number % 2 == 1, numbers)))
