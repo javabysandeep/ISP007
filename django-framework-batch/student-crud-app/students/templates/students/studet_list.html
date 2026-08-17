@@ -1,0 +1,30 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.email }}</td>
+                <td>
+                    <a href="{% url 'read_student' student.id %}">View</a>
+                    <a href="{% url 'update_student' student.id %}">Edit</a>
+                    <a href="{% url 'delete_student' student.id %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No students found.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        a, button {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        form p {
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Management</h1>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
